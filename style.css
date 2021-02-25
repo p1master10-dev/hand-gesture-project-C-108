@@ -1,0 +1,54 @@
+.heading_1{
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  box-shadow: 0px 1px 10px grey;
+}
+
+#camera , #image{
+    width: 350px;
+    height: 300px;
+    border: black 3px dashed;
+    box-shadow: 1px 2px 30px grey;
+}
+
+.arrow{
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 25px;
+    margin-top: 190px;
+    margin-left: 10px;
+}
+
+.right{
+    transform: rotate(-45deg);
+}
+
+#predictionToEmoji{
+    font-size: 50px;
+}
+
+.heading_2{
+    border-radius: 20px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#hrTag{
+    border: black solid 2px;
+}
+
+#predictionPerfect{
+    margin-bottom: 25px;
+    height: 250px;
+}
+
+#backGround{
+    background-color: cornflowerblue;
+}
+
+.divsButton{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Hand Gesture</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+       
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+       
+       <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+       <link rel="stylesheet" href="style.css">
+    </head>
+    <body id='backGround'>
+        <div class="container">
+            <center>
+            <h2 class="btn btn-success heading_1">Hand Gesture App
+            <br>
+            <span>&#128406;</span>|
+            <span>&#128077;</span>|
+            <span>&#128076;</span>|
+            <span>&#128075;</span>
+            </h2>
+            </center>
+        </div>
+        <br>
+        <h4 style="color: white; text-align: center;">Take a snapshot of yours showing a hand gesture and this app will try to idenify which hand gesture is it !!</h4>
+        <br>
+        <div class="col-md-4 col-sm-12 col-xs-12" style="text-align: center;">
+            <h3>Webcam View - </h3>
+            <div id="camera"></div>
+            <br>
+            <button onclick="take_snapshot()" class="btn btn-danger divsButton">Capture</button>
+        </div>
+
+        <div id="blank_div" class="col-md-4 col-sm-12 col-xs-12">
+             <i class="arrow right"></i>
+             <i class="arrow right"></i>
+             <i class="arrow right"></i>
+             <i class="arrow right"></i>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12" style="text-align: center;">
+             <h3>Snapshot - </h3>
+             <div id="image"></div>
+             <br>
+             <button onclick="predictionCheck()" class="btn btn-warning divsButton">Predict Gesture</button>
+        </div>
+
+        <div id="outputPredict">
+            <center>
+            <h3 class="btn btn-success heading_2">Prediction - </h3>
+            <hr id="hrTag">
+            <div id="predictionPerfect">
+
+            <h2 id="predictionToText"></h2>
+            <h2 id="predictionToEmoji"></h2>
+            <h3 id="empty_text" style="color: lightgrey;">Click the capture button and then the Predict Gesture button !</h3>
+
+            </div>
+            </center>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
